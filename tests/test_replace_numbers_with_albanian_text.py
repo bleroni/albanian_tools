@@ -3,7 +3,7 @@ from ..utils.functions import replace_numbers_with_albanian_text
 
 # Test with a single number
 def test_single_number():
-    assert replace_numbers_with_albanian_text("Neni 217") == "Neni dyqind e shtatëmbëdhjetë", "Single number replacement failed"
+    assert replace_numbers_with_albanian_text("Neni 217 kalon tutje.") == "Neni dyqind e shtatëmbëdhjetë kalon tutje.", "Single number replacement failed"
 
 # Test with multiple numbers
 def test_multiple_numbers():

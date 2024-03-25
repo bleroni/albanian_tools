@@ -20,7 +20,7 @@ def test_numbers_with_multiple_spaces():
     assert remove_leading_numbers("2023.    Paragraf interesant") == "Paragraf interesant"
 
 def test_leading_zeros():
-    assert remove_leading_numbers("009. Pragraf interesant") == "Pragraf interesant"
+    assert remove_leading_numbers("009. Paragraf interesant") == "Paragraf interesant"
 
 # Testing with a negative number
 def test_negative_number():
