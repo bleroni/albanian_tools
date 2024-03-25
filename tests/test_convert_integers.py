@@ -5,11 +5,9 @@ from ..utils.functions import integer_to_albanian_text_converter
 def test_simple_number():
   assert integer_to_albanian_text_converter(19) == "nëntëmbëdhjetë", "Failed for 19"
 
-
 # Test a number with a zero in the tens place
 def test_more_complicated_number():
   assert integer_to_albanian_text_converter(717) == "shtatëqind e shtatëmbëdhjetë", "Failed for 717"
-
 
 # Test a number with a zero in the units place
 def test_with_zero():

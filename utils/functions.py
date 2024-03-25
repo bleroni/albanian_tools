@@ -1,5 +1,11 @@
 import re
 
+def remove_leading_numbers(s):
+    # Pattern to match numbers (with optional period) at the beginning of the string and optional spaces after
+    pattern = r'^\d+\.?\s*'
+
+    return re.sub(pattern, '', s)
+
 def replace_numbers_with_albanian_text(text: str) -> str:
     # Use a regular expression to match numbers between 0 and 999
     pattern = r'\b\d{1,3}\b'
