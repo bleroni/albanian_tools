@@ -1,17 +1,35 @@
-def integer_to_albanian_text_converter(any_number: int) -> str:
-    if any_number < 0 or any_number >= 1000:
+import re
+
+def replace_numbers_with_albanian_text(text: str) -> str:
+    # Use a regular expression to match numbers between 0 and 999
+    pattern = r'\b\d{1,3}\b'
+    
+    # Define a function that will be used for substitution
+    def replacement(match):
+        # Convert the matched string to an integer
+        number = int(match.group(0))
+        if number >= 1000:
+            return "Number out of range"
+        # Return the string representation of the custom function's result
+        return integer_to_albanian_text_converter(number)
+    
+    # Use re.sub with the replacement function to replace numbers
+    return re.sub(pattern, replacement, text)
+
+def integer_to_albanian_text_converter(number: int) -> str:
+    if number < 0 or number >= 1000:
         return "Number out of range"
 
     units = ["", "një", "dy", "tre", "katër", "pesë", "gjashtë", "shtatë", "tetë", "nëntë"]
     tens = ["", "dhjetë", "njëzet", "tridhjetë", "katërdhjetë", "pesëdhjetë", "gjashtëdhjetë", "shtatëdhjetë", "tetëdhjetë", "nëntëdhjetë"]
     hundreds = ["", "njëqind", "dyqind", "treqind", "katërqind", "pesëqind", "gjashtëqind", "shtatëqind", "tetëqind", "nëntëqind"]
 
-    if any_number == 0:
+    if number == 0:
         return "zero"
 
-    num_hundreds = any_number // 100
-    num_tens = (any_number % 100) // 10
-    num_units = any_number % 10
+    num_hundreds = number // 100
+    num_tens = (number % 100) // 10
+    num_units = number % 10
 
     result = []
 
