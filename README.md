@@ -1,4 +1,4 @@
-# Albanian Tools
+# Albanian Tools - to be published
 
 ## Installation 
 ```python
@@ -22,5 +22,5 @@ text_2_text_numbers = albanian_tools.replace_numbers_with_albanian_text(text_2)
 
 # integer_to_albanian_text_converter
 integer_example = 717 # Returns "shtatëqind e shtatëmbëdhjetë"
-integer_example_text_number = albanian_tools.remove_leading_numbers(integer_example)
+integer_example_text_number = albanian_tools.integer_to_albanian_text_converter(integer_example)
 ```
