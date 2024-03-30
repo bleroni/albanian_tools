@@ -1,4 +1,8 @@
 # Albanian Tools
+
+# Requirements
+Requires Python >=3.8.19
+
 ## Installation 
 ```python
 pip install albanian_tools
