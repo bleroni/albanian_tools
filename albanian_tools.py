@@ -2,7 +2,7 @@ from .utils.functions import integer_to_albanian_text_converter, replace_numbers
 
 class AlbanianTools:
     def random_albanian_name(self) -> str:
-        return f"Filan Fisteku"
+        return "Filan Fisteku test"
     
     def remove_leading_numbers(self, text: str) -> str:
         return remove_leading_numbers(text)

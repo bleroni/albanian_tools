@@ -1,6 +1,5 @@
 import albanian_tools
 
-
 if __name__ == '__main__':
     text_1 = "913. Paragraf interesant" # Returns "Paragraf interesant"
     text_1_text_numbers = albanian_tools.remove_leading_numbers(text_1)
@@ -12,4 +11,6 @@ if __name__ == '__main__':
     # integer_to_albanian_text_converter
     integer_example = 717 # Returns "shtatëqind e shtatëmbëdhjetë"
     integer_example_text_number = albanian_tools.integer_to_albanian_text_converter(integer_example)
+
+    # random_albanian_name
 

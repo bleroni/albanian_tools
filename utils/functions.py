@@ -1,5 +1,8 @@
 import re
 
+def random_albanian_function() -> str:
+    return "Funksion Filani"
+
 def remove_leading_numbers(s):
     # Pattern to match numbers (with optional period) at the beginning of the string and optional spaces after
     pattern = r'^\d+\.?\s*'
