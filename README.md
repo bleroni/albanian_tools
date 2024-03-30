@@ -1,5 +1,4 @@
-# Albanian Tools - to be published
-
+# Albanian Tools
 ## Installation 
 ```python
 pip install albanian_tools
